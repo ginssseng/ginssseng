@@ -17,10 +17,12 @@ function correct_answer(btn){
     result = result + 1;
   }
   inputNum.value = result;
+  btn.disabled = 'disabled';	
 }
 function wrong_answer(btn){
   btn.style.background = "#EB6465";
   btn.style.color = "white";
+  btn.disabled = 'disabled';
 }
 
 var but1 = document.querySelector(".button11");
@@ -74,6 +76,7 @@ for (var j = 0; j < wbut3.length; j++){
       wrong_answer(wbut3[i]);
       document.querySelector(".button33").style.background = "#5EB97D";
       document.querySelector(".button33").style.color = "white";
+	document.querySelector(".button33").disabled = 'disabled';
     }
 
   };
@@ -85,6 +88,7 @@ for (var j = 0; j < wbut4.length; j++){
     }
   document.querySelector(".button44").style.background = "#5EB97D";
   document.querySelector(".button44").style.color = "white";
+  document.querySelector(".button44").disabled = 'disabled';
   };
 }
 for (var j = 0; j < wbut5.length; j++){
@@ -94,5 +98,6 @@ for (var j = 0; j < wbut5.length; j++){
     }
   document.querySelector(".button52").style.background = "#5EB97D";
   document.querySelector(".button52").style.color = "white";
+  document.querySelector(".button52").disabled = 'disabled';
   };
 }
